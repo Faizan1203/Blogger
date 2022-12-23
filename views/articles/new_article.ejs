@@ -1,0 +1,9 @@
+<%- include('../universal/header.ejs') %> 
+<title>New Article</title>
+<div class="container">
+    <h1 class="mb-4">New Article</h1>
+
+    <form action="/articles/new" method="post">
+        <%- include('_form') %>
+    </form>
+</div>

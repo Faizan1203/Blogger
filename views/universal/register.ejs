@@ -1,0 +1,41 @@
+<%- include('header') %> 
+
+<body>
+    <title>Register</title>
+    <div class="container mt-3">
+      <form action="/register" method="post">
+        <h3>Register</h3>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First Name">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name">
+          <label for="last_name">Last Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="date" class="form-control" name="dob" id="dob" placeholder="Date of Birth">
+          <label for="dob">Date of Birth</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+          <label for="username">Username</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+          <label for="password">Password</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" aria-describedby="emailHelp">
+          <label for="email">Email address</label>
+          <div id="emailHelp" class="form-text">Your verification link will be sent to this email address</div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="terms">
+          <label class="form-check-label" for="terms">I agree with all the terms and conditions</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      </div> 
+      
+</body>

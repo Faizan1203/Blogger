@@ -1,0 +1,27 @@
+<%- include('../universal/header.ejs') %> 
+
+<body>
+    <title>Article: <%= article.title %></title>
+
+    <div class="container">
+        <div>
+                <h1><%=article.title%></h1>
+                <div class="text-muted mt-2">
+                    <label>Created On:</label>
+                    <%=article.created_on.toLocaleDateString()%>
+                </div>
+                
+                <div class="mt-5">
+                    <h4><u>Description</u></h4>
+                    <p><%- article.sanitizedHTML %></p>
+                </div>
+
+                <div class="mt-3">
+                    <a class="btn btn-secondary" href="/">All Articles</a>
+                    <a class="btn btn-danger" href="/articles/edit/<%=article.id%>" method="post">Edit</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>

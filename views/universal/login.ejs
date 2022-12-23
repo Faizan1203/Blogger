@@ -1,0 +1,22 @@
+<%- include('header') %> 
+
+<body>
+    <title>Login</title>
+    <div class="container mt-3">
+      <% if (messages.error){%>
+         <%= messages.error %>
+      <%}%>
+        <form action="/login" method="post">
+          <h3>Login</h3>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+            <label for="username">Username</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+            <label for="password">Password</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div> 
+</body>
